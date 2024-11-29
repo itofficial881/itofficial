@@ -1,0 +1,69 @@
+/* 基本設定 */
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background-color: #e8dff5; /* パステル紫 */
+}
+
+/* デスクトップ */
+.desktop {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #d7cfe8, #f2ebfc);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+/* お知らせバー */
+.notification-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #cbb7e6;
+  color: #5c4b8b;
+  padding: 5px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ウィンドウ */
+.window {
+  position: absolute;
+  width: 300px;
+  border: 2px solid #5c4b8b;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+}
+
+/* ウィンドウヘッダー */
+.window-header {
+  background-color: #a68dc7;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* アイコン */
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
